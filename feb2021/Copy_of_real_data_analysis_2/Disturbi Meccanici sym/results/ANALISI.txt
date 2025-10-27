@@ -1,0 +1,21 @@
+-	Rilevamento 4:
+complessivamente andato abbastanza bene. 
+3 casi patologici (5,13,30)
+CAUSA: fail dell'algoritmo di rilevazione della posizione dei magneti (localize_magnets). 
+PERCHE'? Valori di traslazione troppo ampi
+
+-	Rilevamento 5:
+complessivamente medio
+- 1 caso estremamente patologico (10)
+CAUSA: fail dell'algoritmo di rilevazione della posizione dei magneti (localize_magnets). 
+PERCHE'? boh, sembrava tutto abbastanza bello (rototraslazioni piccole e magneti distanti dai sensori)
+- alcuni casi mediamente patologici (es.18)
+CAUSA: fail dell'algoritmo di rilevazione della posizione dei magneti (localize_magnets)
+- alcuni casi forse ancor peggiori (es.11): l'errore non è troppo alto, i magneti sono abbastanza vicini alle loro posizioni giuste, 
+però c'è un errore di circa 3 mm per magnete. Questo vuol dire che c'è un errore di misurazione non indifferente, ma non abbiamo segnali che 
+ci permettano di individuare a livello software questo caso impreciso (se non un errore comunque abbastanza altino, ma non troppo - costo ~ 0.8)
+
+
+-	Rilevamento 6:
+complessivamente buonino: tutti i costi sono inferiori a 0.09, ed anche nel caso degli errori più alti lo spostamento è piccolo e più trasversale 
+che longitudinale rispetto alla traiettoria (il che non ci dà fastidio)

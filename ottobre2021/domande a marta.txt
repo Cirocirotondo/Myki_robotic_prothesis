@@ -1,0 +1,12 @@
+(- cosa fa esattamente orientation generation? posso spostare i magneti prima che venga chiamata questa funzione?)
+- con "traslazione lungo y di max 0.5 cm" si intende 0.5 cm in verso positivo e 0.5 in verso negativo?
+- a cosa serve fare il clear di x, xx, Loc, LLoc ? (riga 64)
+- riga 58: non è corretto usare come posizione di partenza per la localizzazione il vettore xx, 
+  ossia il vettore contenente le posizioni esatte dei magneti!
+	(NOTA: di conseguenza, anche alla riga 107 devo fare la stessa modifica)
+- righe 60-62: perché giri due volte il vettore Loc? (da vettore riga a vettore colonna a vettore riga di nuovo)
+	(nota: ho cpoiato il ragionamento anche nelle righe 109-111: non ne ho capito il motivo, però per uniformità del codice l'ho tenuto così)
+- NOTA! funzione rotoTrasla: per ora faccio ruotare attorno agli assi x,y e z, senza riallineare il braccio -> in teoria dovrebbe andare bene comunque;
+	 se però il programma facesse fatica, ricorda che puoi sempre allineare il braccio agli assi, e compiere la rotazione attorno alla retta passante per l'asse del braccio
+- Cos'è quel salto che fa il magnete 1 tra l'11° ed il 12° passo?
+- Cosa fare con gli errori
